@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <todo-item>1</todo-item>
+      <todo-item>2</todo-item>
+      <todo-item>3</todo-item>
+      <ul is="expandable-list" data-expanded="true">
+        <li>hi</li>
+        <li>hello</li>
+        <ul is="expandable-list" data-expanded="true">
+          <li>hi2</li>
+          <li>hello2</li>
+        </ul>
+      </ul>
+    </div>
+    
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+  <script defer src="/components/TodoItem"></script>
+  <script defer src="/components/ExpandableList.ts"></script>
+</html>
